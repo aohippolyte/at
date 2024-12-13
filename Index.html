@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT Inter-espress</title>
+    <!-- Lien CDN pour Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class="font-rubik">
+    <header class="flex items-center justify-between p-4">
+        <div class="logo flex items-center">
+            <img src="images/I1.png" alt="" class="w-16 h-16 rounded-full">
+            <h1 class="text-3xl text-gray-600 ml-2">AT Inter-Espress</h1>
+        </div>
+        <ul class="menu flex space-x-12 hidden md:flex">
+            <li><a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-500">Accueil</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-500">Nos services</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-500">À propos</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-500">Contact</a></li>
+        </ul>
+        <div class="number p-2 text-white bg-gradient-to-r from-blue-500 to-teal-600 rounded-full">
+            <p>(+229) 46 07 45 06</p>
+        </div>
+        <div class="small_menu md:hidden cursor-pointer" onclick="toggleMenu()">
+            <span class="block w-6 h-1 bg-indigo-600 mb-1"></span>
+            <span class="block w-6 h-1 bg-indigo-600 mb-1"></span>
+            <span class="block w-6 h-1 bg-indigo-600 mb-1"></span>
+        </div>
+    </header>
+
+    <section class="home flex flex-col-reverse md:flex-row items-center justify-between px-10 py-20">
+        <div class="left w-full md:w-2/3">
+            <h1 class="text-6xl text-teal-600 font-semibold">AT <span class="ml-16">Inter-Express</span></h1>
+            <h4 class="text-xl text-gray-500 mt-4">Nous sommes situés...</h4>
+            <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat, et praesentium amet nobis earum rerum possimus mollitia !</p>
+            <button class="mt-8 bg-gradient-to-r from-blue-500 to-teal-600 text-white py-2 px-6 rounded-full uppercase">L'international</button>
+        </div>
+        <div class="right w-full md:w-1/3 mt-10 md:mt-0">
+            <img src="images/acceuil.png" alt="Image" class="w-full h-full object-cover rounded-lg shadow-md">
+        </div>
+    </section>
+
+    <section class="services px-10 py-20">
+        <h1 class="text-5xl text-gray-600">Nos services</h1>
+        <p class="text-sm text-gray-500 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam beatae facilis commodi eius corporis?</p>
+        <div class="list_services mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Repeat for each service -->
+            <div class="serv p-8 bg-white rounded-lg shadow-lg text-center">
+                <img src="images/import.jpg" alt="" class="h-24 mx-auto mb-4">
+                <h4 class="text-xl text-gray-600">Importation</h4>
+                <p class="text-gray-500">(Lorem ipsum dolor sit)</p>
+                <button class="mt-4 bg-gradient-to-r from-blue-500 to-teal-600 text-white py-2 px-6 rounded-full">L'international</button>
+            </div>
+
+            <div class="serv p-8 bg-white rounded-lg shadow-lg text-center">
+                <img src="images/import2.jpg" alt="" class="h-24 mx-auto mb-4">
+                <h4 class="text-xl text-gray-600">Importation</h4>
+                <p class="text-gray-500">(Lorem ipsum dolor sit)</p>
+                <button class="mt-4 bg-gradient-to-r from-blue-500 to-teal-600 text-white py-2 px-6 rounded-full">L'international</button>
+            </div>
+
+            <div class="serv p-8 bg-white rounded-lg shadow-lg text-center">
+                <img src="images/livre.jpg" alt="" class="h-24 mx-auto mb-4">
+                <h4 class="text-xl text-gray-600">Importation</h4>
+                <p class="text-gray-500">(Lorem ipsum dolor sit)</p>
+                <button class="mt-4 bg-gradient-to-r from-blue-500 to-teal-600 text-white py-2 px-6 rounded-full">L'international</button>
+            </div>
+
+            <div class="serv p-8 bg-white rounded-lg shadow-lg text-center">
+                <img src="images/livre2.jpg" alt="" class="h-24 mx-auto mb-4">
+                <h4 class="text-xl text-gray-600">Importation</h4>
+                <p class="text-gray-500">(Lorem ipsum dolor sit)</p>
+                <button class="mt-4 bg-gradient-to-r from-blue-500 to-teal-600 text-white py-2 px-6 rounded-full">L'international</button>
+            </div>
+
+            <div class="serv p-8 bg-white rounded-lg shadow-lg text-center">
+                <img src="images/suivi.jpg" alt="" class="h-24 mx-auto mb-4">
+                <h4 class="text-xl text-gray-600">Importation</h4>
+                <p class="text-gray-500">(Lorem ipsum dolor sit)</p>
+                <button class="mt-4 bg-gradient-to-r from-blue-500 to-teal-600 text-white py-2 px-6 rounded-full">L'international</button>
+            </div>
+
+            <div class="serv p-8 bg-white rounded-lg shadow-lg text-center">
+                <img src="images/envoiurg.jpg" alt="" class="h-24 mx-auto mb-4">
+                <h4 class="text-xl text-gray-600">Importation</h4>
+                <p class="text-gray-500">(Lorem ipsum dolor sit)</p>
+                <button class="mt-4 bg-gradient-to-r from-blue-500 to-teal-600 text-white py-2 px-6 rounded-full">L'international</button>
+            </div>
+
+            <div class="serv p-8 bg-white rounded-lg shadow-lg text-center">
+                <img src="images/envoiurg2.jpg" alt="" class="h-24 mx-auto mb-4">
+                <h4 class="text-xl text-gray-600">Importation</h4>
+                <p class="text-gray-500">(Lorem ipsum dolor sit)</p>
+                <button class="mt-4 bg-gradient-to-r from-blue-500 to-teal-600 text-white py-2 px-6 rounded-full">L'international</button>
+            </div>
+
+            <div class="serv p-8 bg-white rounded-lg shadow-lg text-center">
+                <img src="images/gr.jpg" alt="" class="h-24 mx-auto mb-4">
+                <h4 class="text-xl text-gray-600">Importation</h4>
+                <p class="text-gray-500">(Lorem ipsum dolor sit)</p>
+                <button class="mt-4 bg-gradient-to-r from-blue-500 to-teal-600 text-white py-2 px-6 rounded-full">L'international</button>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <section class="about px-10 py-20">
+        <h1 class="text-5xl text-gray-600">À propos de nous</h1>
+        <div class="list_about grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+            <!-- Repeat for each description -->
+            <div class="description flex items-center bg-white rounded-lg shadow-lg p-6">
+                <img src="images/A1.jpg" alt="" class="w-20 h-20 rounded-full mr-6">
+                <div>
+                    <h3 class="text-xl text-gray-600">Simplicité et accessibilité</h3>
+                    <p class="text-gray-500">Grace à nos services d'importation et de livraison fiables...</p>
+                </div>
+            </div>
+
+            <div class="description flex items-center bg-white rounded-lg shadow-lg p-6">
+                <img src="images/A2.jpg" alt="" class="w-20 h-20 rounded-full mr-6">
+                <div>
+                    <h3 class="text-xl text-gray-600">Simplicité et accessibilité</h3>
+                    <p class="text-gray-500">Grace à nos services d'importation et de livraison fiables...</p>
+                </div>
+            </div>
+
+            <div class="description flex items-center bg-white rounded-lg shadow-lg p-6">
+                <img src="images/A3.jpg" alt="" class="w-20 h-20 rounded-full mr-6">
+                <div>
+                    <h3 class="text-xl text-gray-600">Simplicité et accessibilité</h3>
+                    <p class="text-gray-500">Grace à nos services d'importation et de livraison fiables...</p>
+                </div>
+            </div>
+
+            <div class="description flex items-center bg-white rounded-lg shadow-lg p-6">
+                <img src="images/A4.jpg" alt="" class="w-20 h-20 rounded-full mr-6">
+                <div>
+                    <h3 class="text-xl text-gray-600">Simplicité et accessibilité</h3>
+                    <p class="text-gray-500">Grace à nos services d'importation et de livraison fiables...</p>
+                </div>
+            </div>
+
+            <div class="description flex items-center bg-white rounded-lg shadow-lg p-6">
+                <img src="images/A5.jpg" alt="" class="w-20 h-20 rounded-full mr-6">
+                <div>
+                    <h3 class="text-xl text-gray-600">Simplicité et accessibilité</h3>
+                    <p class="text-gray-500">Grace à nos services d'importation et de livraison fiables...</p>
+                </div>
+            </div>
+
+            <div class="description flex items-center bg-white rounded-lg shadow-lg p-6">
+                <img src="images/A6.jpg" alt="" class="w-20 h-20 rounded-full mr-6">
+                <div>
+                    <h3 class="text-xl text-gray-600">Simplicité et accessibilité</h3>
+                    <p class="text-gray-500">Grace à nos services d'importation et de livraison fiables...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact px-10 py-20">
+        <h1 class="text-5xl text-gray-600">Contactez nous</h1>
+        <div class="form-image flex items-center justify-between mt-8">
+            <form action="donner.php" method="post" class="w-1/2">
+                <input type="text" name="nom" placeholder="Nom" class="w-full p-4 mb-4 rounded-full bg-gray-200 border-0">
+                <input type="email" name="email" placeholder="Email" class="w-full p-4 mb-4 rounded-full bg-gray-200 border-0">
+                <input type="text" name="objet" placeholder="Objet du Message" class="w-full p-4 mb-4 rounded-full bg-gray-200 border-0">
+                <input type="tel" name="whatsapp" placeholder="Numéro WhatsApp" class="w-full p-4 mb-4 rounded-full bg-gray-200 border-0">
+                <textarea name="message" rows="10" placeholder="Votre Message" class="w-full p-4 mb-4 rounded-lg bg-gray-200 border-0"></textarea>
+                <button type="submit" class="mt-4 bg-gradient-to-r from-blue-500 to-teal-600 text-white py-2 px-6 rounded-full">Envoyer</button>
+            </form>
+            <div class="image w-1/2 ml-8">
+                <img src="images/contact.jpg" alt="" class="w-full object-cover rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-600 text-white text-center py-4">
+        <p>&copy; 2024 AT Inter-Express. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
